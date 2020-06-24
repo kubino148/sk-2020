@@ -37,14 +37,14 @@ Podział na 3 równe podsieci, więc
 
 2^n >= 3 2^2 >= 3  
 zatem n = 2  
-Więc maska podsieci to /24
+Więc maska podsieci to /24  
 
 | Podsieć  | Adres Podsieci | Host min     | Host max      | Adres rozgłoszeniowy |
 | 4         | 10.1.0.0/24 | 10.1.0.1| 10.1.0.254 | 10.1.0.255 |  
 | 5         | 10.1.1.0/24 | 10.1.1.1| 10.1.1.254 | 10.1.1.255 |  
 | 6         | 10.1.2.0/24 | 10.1.2.1| 10.1.2.254 | 10.1.2.255 |  
 
-Podział na 3 podsieci:
+Podział na 3 podsieci:  
 
 | Podsieć  | Adres Podsieci | Host min     | Host max      | Adres rozgłoszeniowy |
 | 7        | 10.2.0.0/23 | 10.2.0.1| 10.2.1.254 | 10.2.1.255 |  

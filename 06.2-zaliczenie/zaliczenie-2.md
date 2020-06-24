@@ -139,17 +139,17 @@ C       192.168.2.0 is directly connected, Serial0/3/0
 ### Router 3
 
 
-S       10.0.0.0/22 [1/0] via 192.168.3.2
-S       10.1.0.0/24 [1/0] via 192.168.2.1
-S       10.1.1.0/24 [1/0] via 192.168.2.1
-S       10.1.2.0/24 [1/0] via 192.168.2.1
-C       10.2.0.0/23 is directly connected, FastEthernet0/0
-C       10.2.2.0/26 is directly connected, FastEthernet0/1
-C       10.2.2.64/28 is directly connected, FastEthernet1/0
-     192.168.2.0/30 is subnetted, 1 subnets
-C       192.168.2.0 is directly connected, Serial0/3/1
-     192.168.3.0/30 is subnetted, 1 subnets
-C       192.168.3.0 is directly connected, Serial0/3/0 
+S       10.0.0.0/22 [1/0] via 192.168.3.2  
+S       10.1.0.0/24 [1/0] via 192.168.2.1  
+S       10.1.1.0/24 [1/0] via 192.168.2.1  
+S       10.1.2.0/24 [1/0] via 192.168.2.1  
+C       10.2.0.0/23 is directly connected, FastEthernet0/0  
+C       10.2.2.0/26 is directly connected, FastEthernet0/1  
+C       10.2.2.64/28 is directly connected, FastEthernet1/0  
+     192.168.2.0/30 is subnetted, 1 subnets  
+C       192.168.2.0 is directly connected, Serial0/3/1  
+     192.168.3.0/30 is subnetted, 1 subnets  
+C       192.168.3.0 is directly connected, Serial0/3/0  
 
 ### Schemat sieci
 

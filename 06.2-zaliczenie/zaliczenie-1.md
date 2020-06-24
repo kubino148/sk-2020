@@ -104,4 +104,4 @@ C       192.168.3.0 is directly connected, Serial0/3/0
 ![Schemat](Zad1.png)
 
 # DISCLAIMER
-Drogi kolego studencie, mam nadzieję, że jeśli czytasz moją pracę, to szukasz pomocy/sprawdzasz jak wygladają prace innych. Jeśli potrzebujesz jakichś wskazówek to napisz do mnie discordzie ```Kubino148#1114``` z chęcią ci pomogę. Jednak jeśli twoim celem jest przeforkowanie/clonowanie tej pracy, to wiedz, że nad zadaniami tymi spędziłem kilka godzin pracy i cała część CPT jest zrobiona bezpośrednio w command line, więc nie tak jak to robiliśmy na zajęciach, weź to pod uwagę w razie jakichkolwiek wątpliwości prowadzącego. Pozdrawiam, Kubino148
+Drogi kolego studencie, mam nadzieję, że jeśli czytasz moją pracę, to szukasz pomocy/sprawdzasz jak wygladają prace innych. Jeśli potrzebujesz jakichś wskazówek to napisz do mnie discordzie ```Kubino148#1114``` z chęcią ci pomogę. Jednak jeśli twoim celem jest przeforkowanie/clonowanie tej pracy, to wiedz, że nad zadaniami tymi spędziłem kilka godzin pracy i cała część CPT jest zrobiona bezpośrednio w command line, więc nie tak jak to robiliśmy na zajęciach, weź to pod uwagę i uszanuj moją pracę. Pozdrawiam, Kubino148

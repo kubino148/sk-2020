@@ -100,38 +100,38 @@ Routing został skonfigurowany w Cisco CLI, na każdym routerze wykonano komend�
 Przykładowo, dla routingu pomiędzy sieciami 10.0.0.0 i 10.1.0.0 byłay to komendy  
 
 ### Router 1 
-```(config)# ip route 10.2.0.0 255.255.254.0 192.168.3.1```  
+```(config)# ip route 10.2.0.0 255.255.254.0 192.168.3.1```    
 ### Router 2
-```(config)# ip route 10.0.0.0 255.255.252.0 192.168.3.2```
+```(config)# ip route 10.0.0.0 255.255.252.0 192.168.3.2```  
 
-## Tablice routingu (Bezpośrednio z ```# show ip route```)
+## Tablice routingu (Bezpośrednio z ```# show ip route```)  
 
 
 ### Router 1
 
 
-C       10.0.0.0/22 is directly connected, FastEthernet0/0
-S       10.1.0.0/24 [1/0] via 192.168.3.1
-S       10.1.1.0/24 [1/0] via 192.168.3.1
-S       10.1.2.0/24 [1/0] via 192.168.3.1
-S       10.2.0.0/23 [1/0] via 192.168.3.1
-S       10.2.2.0/26 [1/0] via 192.168.3.1
-S       10.2.2.64/28 [1/0] via 192.168.3.1
-     192.168.3.0/30 is subnetted, 1 subnets
-C       192.168.3.0 is directly connected, Serial0/3/1
+C       10.0.0.0/22 is directly connected, FastEthernet0/0  
+S       10.1.0.0/24 [1/0] via 192.168.3.1  
+S       10.1.1.0/24 [1/0] via 192.168.3.1  
+S       10.1.2.0/24 [1/0] via 192.168.3.1  
+S       10.2.0.0/23 [1/0] via 192.168.3.1  
+S       10.2.2.0/26 [1/0] via 192.168.3.1  
+S       10.2.2.64/28 [1/0] via 192.168.3.1  
+     192.168.3.0/30 is subnetted, 1 subnets  
+C       192.168.3.0 is directly connected, Serial0/3/1  
 
 ### Router 2
 
 
-S       10.0.0.0/22 [1/0] via 192.168.2.2
-C       10.1.0.0/24 is directly connected, FastEthernet0/0
-C       10.1.1.0/24 is directly connected, FastEthernet0/1
-C       10.1.2.0/24 is directly connected, FastEthernet1/0
-S       10.2.0.0/23 [1/0] via 192.168.2.2
-S       10.2.2.0/26 [1/0] via 192.168.2.2
-S       10.2.2.64/28 [1/0] via 192.168.2.2
-     192.168.2.0/30 is subnetted, 1 subnets
-C       192.168.2.0 is directly connected, Serial0/3/0
+S       10.0.0.0/22 [1/0] via 192.168.2.2  
+C       10.1.0.0/24 is directly connected, FastEthernet0/0  
+C       10.1.1.0/24 is directly connected, FastEthernet0/1  
+C       10.1.2.0/24 is directly connected, FastEthernet1/0  
+S       10.2.0.0/23 [1/0] via 192.168.2.2  
+S       10.2.2.0/26 [1/0] via 192.168.2.2  
+S       10.2.2.64/28 [1/0] via 192.168.2.2  
+     192.168.2.0/30 is subnetted, 1 subnets  
+C       192.168.2.0 is directly connected, Serial0/3/0  
 
 
 ### Router 3

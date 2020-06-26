@@ -26,20 +26,20 @@
 
 | łańcuch    |  przeznaczenie   | 
 | ------------- |:-------------| 
-|   ``INPUT``    |                               |
-|   ``OUTPUT``    |                              |
-|   ``FORWARD``    |                             |
-|   ``PREROUTING``    |                          |
+|   ``INPUT``    |       PAKIETY WCHODZĄCE                        |
+|   ``OUTPUT``    |              PAKIETY WYCHODZĄCE               |
+|   ``FORWARD``    |               PAKIETY PRZECHODZĄCE PRZEZ ŚCIEŻKĘ ROUTERA             |
+|   ``PREROUTING``    |                       |
 |   ``POSTROUTING``    |                         |
 
 ### co zrobić / target (-j)
 
 |     |  przeznaczenie   | 
 | ------------- |:-------------| 
-|   ``ACCEPT``    |                               |
-|   ``DROP``    |                              |
-|   ``REJECT``    |                             |
-|   ``LOG``    |                             |
+|   ``ACCEPT``    |          Zaakceptować                     |
+|   ``DROP``    |                   Ignorować           |
+|   ``REJECT``    |                   Odrzucić i wysłać odpowiedź o odrzuceniu |
+|   ``LOG``    |                Zapisz w logach             |
 
 
 ### Użycie
@@ -95,9 +95,9 @@ iptables -A -i <interface> -p <protocol (tcp/udp) -s <source> --dport <port> -j 
 
 | Przypadek | komenda | Komentarz |
 | - | - | - |
-| Blokowanie dostępu INPUT | | |
-| Zezwolenie na dostęp konkretny port | | |
-| Zezwolenie na dostęp konkretny port + konkretny adres| | |
-| Przekierowanie portu | | |
-| Reset ustawień firewall | | |
-| Zapis ustwień firewall | | |
+| Blokowanie dostępu INPUT | iptables -I INPUT -j DROP | |
+| Zezwolenie na dostęp konkretny port | iptables -A INPUT -j ACCEPT -p tcp --destination-port <NUMER PORTU> | |
+| Zezwolenie na dostęp konkretny port + konkretny adres| iptables -A INPUT -j ACCEPT -i -p tcp --destination-port <NUMER PORTU> -s <ADRES IP> | |
+| Przekierowanie portu | iptables -t nat -A PREROUTING -p tcp --dport <SOURCE PORT> -j REDIRECT --to-port <DESTINATION PORT> | |
+| Reset ustawień firewall | iptables -F | |
+| Zapis ustwień firewall | iptables-save > /etc/iptables/rules.v4 | |

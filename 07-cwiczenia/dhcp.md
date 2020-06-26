@@ -21,15 +21,17 @@
 ## Parametry konfiguracji DHCP
 Jaki parametry konfiguracji można ustawić z wykorzystaniem DHCP
 
+
 | Parametr                    | 
 | -------------                 |
 | Adres IP                      |
 | Maska podsieci                |
+| Brama domyślna |
+| Liczba hostów których chemy zaadresować|
+| Adres pierwszego hosta |
+| DNS|
 | |
-| |
-| |
-| |
-| |
+
 
 ## Przydatne polecenia
 

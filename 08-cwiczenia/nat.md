@@ -36,7 +36,7 @@ W którym miejscu następuje zmaina adresu prywatnego na publiczny?
 ## Zadanie do domu
 
 1. Zapoznaj się z pojęciem Maskarady IP ``MASQUERADE``
-  
+   MASQUERADE powoduje translację prywatnych adresów i portów na publiczny adres. Odpowiednij PAT (Port Adress Translation)
 ## Materiały
 
 * https://tools.ietf.org/html/rfc1918
